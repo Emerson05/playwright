@@ -27,11 +27,11 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
      //baseURL: 'https://www.saucedemo.com/',//
-     baseURL: 'https://playground.qatools.dev/login',
-     testIdAttribute: 'data-test',
+     baseURL: 'https://playground.qatools.dev/',
+     testIdAttribute: 'data-testid',
     
     launchOptions: {
-      slowMo: 3000,
+      slowMo: 1000,
     },
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',

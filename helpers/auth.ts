@@ -23,8 +23,10 @@ export async function loginClinic(
 
   await page.fill('#login-email', user.email);
   await page.fill('#login-password', user.password);
+
+  await page.getByTestId('login-remember').click();
   
 
-    page.getByRole('button', { name: 'Sign in'}).click()
+  await page.getByRole('button', { name: 'Sign in'}).click()
     
 }
