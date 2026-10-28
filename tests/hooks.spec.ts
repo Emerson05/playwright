@@ -13,7 +13,7 @@ test.afterEach(async({},testInfo)=>{
         console.log('EXCLUINDO USÁRIO\n');
     }
     
-});
+}); 
 
 
 test('Criar usuário com dados válidos', async()=>{
